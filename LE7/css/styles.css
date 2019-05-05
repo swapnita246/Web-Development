@@ -1,0 +1,131 @@
+body{
+    margin:0 auto;
+    padding 0px;
+
+}
+nav{
+    height:50px;
+    width:100%;
+    background-color:#065891;
+}
+nav,a{
+    text-decoration:none;
+    color: white;
+    float:left;
+    margin-right:20px; 
+    
+}
+a:hover{
+    color:blue;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content{
+    position:absolute;
+    display:none;
+    width:100%;
+    padding-top:15px;
+}
+.dropdown-content a{
+    color:black;
+    text-decoration:none;
+    display:block;
+    z-index:1;
+}
+.dropdown-content a:hover{
+    background-color:#065891;
+    color:white;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown:hover .menu{
+    background-color:#3e8e41;
+}
+#logo{
+    height:30px;
+    width:30px;
+}
+header{
+    height:150px;
+    width:100%;
+    background-color:rgb(216, 213, 213);
+}
+#logo2{
+    height:150px;
+    width:90px;
+    float:left;
+}
+#logo2,img{
+    height:100px;
+    width:90px;
+    float:left;
+}
+
+#naac{
+    float:left;
+}
+h1{
+    float:left;
+    padding-top:15px;
+    padding-left:160px;
+}
+.mainContent{
+    width:100%;
+    height:530;
+    
+}
+.leftContent{
+    width:15%;
+    height:100%;
+    background-color: #065891;
+    float:left;
+}
+.bodyContent{
+    width:55%;
+    height:100%;
+    background-color: white;
+    float:left;
+}
+.rightContent{
+    width:30%;
+    height:100%;
+    background-color: #065891;
+    float:left;
+}
+#events{
+    color:white;
+    text-align: center;
+}
+.endContent{
+    background-color:rgb(216, 213, 213);
+}
+#name{
+    color:black
+}
+#details{
+    color:white;
+}
+.pageHeader{
+    text-align: center;
+    color: #00007d;
+    width:100%;
+}
+.pageContent{
+    width:100%;
+}
+.nofloat{
+	float:none;
+}
+.tooltip{
+	border:1px solid black;
+	background:red;
+	display:inline;
+	position relative;
+}
+.tooltiptext{
+	visibility:hidden;
+	
+}

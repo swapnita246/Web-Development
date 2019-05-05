@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Theme Changer</title>
+	<style type="text/css">
+		.main{
+			float:right;
+		}
+		.options{
+			float:left;
+			border-right: solid 1px black;
+			text-decoration: none;
+			color:black;
+			
+
+		}
+		.noborder{
+			text-decoration: none;
+			color:black;
+		}
+
+		.overl{
+			text-decoration: overline;
+		}
+
+
+	</style>
+	<p id="changeStyleSheet"></p>
+</head>
+<body>
+	<div class="main">
+		
+			<a class="options" href="#" onclick=cobra()>Cobra</a>
+			<a class="options" href="#" onClick=python()>Python</a>
+			<a class="noborder" href="#" onClick=none()>None</a>
+        
+    </div>
+	
+	<h1>This page is to understand DOM by changing theme of HTML page</h1>
+	
+	<p><a class="overl" href="#">Link 1</a></p>
+	<p><a class="overl" href="#">Link 2</a></p>
+	<p><a class="overl" href="#">Link 3</a></p>
+	<p><a class="underl" href="#">Link 4</a></p>
+	<p><a class="underl" href="#">Link 5</a></p>
+	<p><a class="underl" href="#">Link 6</a></p>
+	<font id="text" size="">This is some Normal Text</font>
+	<p id="msg"></p>
+
+	<script type="text/javascript">
+		function cobra(){
+			document.getElementById('changeStyleSheet').innerHTML='<link rel="stylesheet" href="css/cobraext.css">';
+			document.getElementById('msg').innerHTML='Cobra Theme is applied';
+			document.getElementById('texts').size="20";
+
+		}
+		function python(){
+			document.getElementById('changeStyleSheet').innerHTML='<link rel="stylesheet" href="css/pythonext.css">';
+			var arr=document.getElementsByTagName('a');
+			var i;
+			for(i=3;i<arr.length;i++)
+			{
+				arr[i].className='';
+			}
+			
+			document.getElementById('msg').innerHTML='Python Theme is applied';
+			document.getElementById('texts').size="40";
+
+		}
+		function none(){
+			document.getElementById('changeStyleSheet').innerHTML='';
+			var arr2=document.getElementsByTagName('a');
+			var j;
+			k=arr2.length;
+			for(j=3;j<6;j++)
+			{
+				arr2[j].className='overl';
+			}
+			for(j=6;j<k;j++)
+			{
+				arr2[j].className='underl';
+			}
+			document.getElementById('texts').size="10";
+			document.getElementById('msg').innerHTML='';
+			
+
+		}
+	</script>
+</body>
+</html>
